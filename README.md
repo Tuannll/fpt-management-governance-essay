@@ -13,7 +13,7 @@
 
 **English** | [Tiếng Việt](README.vi.md)
 
-**[📄 View PDF Online](https://github.com/Tuannll/fpt-management-governance-essay/blob/pdf/main.pdf) • [🚀 Quick Start](#quick-start) • [✨ Essay Structure](#essay-structure) • [❓ FAQ](#faq)**
+**[📄 View PDF Online](https://github.com/Tuannll/fpt-management-governance-essay/blob/pdf/main.pdf) • [📥 Download PDF (Release)](https://github.com/Tuannll/fpt-management-governance-essay/releases/latest/download/main.pdf) • [🚀 Quick Start](#quick-start) • [✨ Essay Structure](#essay-structure) • [❓ FAQ](#faq)**
 
 </div>
 

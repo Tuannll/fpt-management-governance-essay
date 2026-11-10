@@ -26,6 +26,18 @@ jobs:
           name: essay-pdf
           path: main.pdf
 
+      - name: Publish PDF to GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete latest --yes 2>/dev/null || true
+          git tag -d latest 2>/dev/null || true
+          git push origin :refs/tags/latest 2>/dev/null || true
+          gh release create latest main.pdf \
+            --title "Latest PDF Build" \
+            --notes "Bản PDF tiểu luận mới nhất được tự động biên dịch từ commit $GITHUB_SHA." \
+            --target main
+
       - name: Publish PDF to branch
         run: |
           git config --global user.name "github-actions[bot]"
