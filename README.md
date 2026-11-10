@@ -5,13 +5,15 @@
 **Academic research essay on Management, Corporate Governance, and the Impact of Artificial Intelligence at FPT Corporation.**
 
 [![LaTeX](https://img.shields.io/badge/LaTeX-2e-008080?logo=latex&logoColor=white)](https://www.latex-project.org/)
+[![Build PDF](https://github.com/Tuannll/fpt-management-governance-essay/actions/workflows/build-pdf.yml/badge.svg)](https://github.com/Tuannll/fpt-management-governance-essay/actions/workflows/build-pdf.yml)
+[![View PDF](https://img.shields.io/badge/PDF-View_Online-red.svg)](https://github.com/Tuannll/fpt-management-governance-essay/blob/pdf/main.pdf)
 [![Status](https://img.shields.io/badge/Status-In_Progress-orange.svg)]()
 [![Team](https://img.shields.io/badge/Team-2_Members-blue.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **English** | [Tiếng Việt](README.vi.md)
 
-**[🚀 Quick Start](#quick-start) • [✨ Essay Structure](#essay-structure) • [📁 Project Structure](#project-structure) • [❓ FAQ](#faq)**
+**[📄 View PDF Online](https://github.com/Tuannll/fpt-management-governance-essay/blob/pdf/main.pdf) • [🚀 Quick Start](#quick-start) • [✨ Essay Structure](#essay-structure) • [❓ FAQ](#faq)**
 
 </div>
 

@@ -5,13 +5,15 @@
 **Tiểu luận nghiên cứu học thuật về Quản lý, Quản trị công ty và Tác động của Trí tuệ Nhân tạo (AI) tại Tập đoàn FPT.**
 
 [![LaTeX](https://img.shields.io/badge/LaTeX-2e-008080?logo=latex&logoColor=white)](https://www.latex-project.org/)
+[![Build PDF](https://github.com/Tuannll/fpt-management-governance-essay/actions/workflows/build-pdf.yml/badge.svg)](https://github.com/Tuannll/fpt-management-governance-essay/actions/workflows/build-pdf.yml)
+[![View PDF](https://img.shields.io/badge/PDF-Xem_Online-red.svg)](https://github.com/Tuannll/fpt-management-governance-essay/blob/pdf/main.pdf)
 [![Status](https://img.shields.io/badge/Status-In_Progress-orange.svg)]()
 [![Team](https://img.shields.io/badge/Team-2_Members-blue.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 [English](README.md) | **Tiếng Việt**
 
-**[🚀 Quick Start](#quick-start) • [✨ Cấu trúc bài tiểu luận](#essay-structure) • [📁 Cấu trúc thư mục](#project-structure) • [❓ FAQ](#faq)**
+**[📄 Xem trực tiếp PDF](https://github.com/Tuannll/fpt-management-governance-essay/blob/pdf/main.pdf) • [🚀 Quick Start](#quick-start) • [✨ Cấu trúc bài tiểu luận](#essay-structure) • [❓ FAQ](#faq)**
 
 </div>
 
