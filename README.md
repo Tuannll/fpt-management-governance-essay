@@ -45,7 +45,7 @@ Install a TeX distribution supporting UTF-8 and Vietnamese fonts:
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/[username]/fpt-management-governance-essay.git
+git clone https://github.com/Tuannll/fpt-management-governance-essay.git
 cd fpt-management-governance-essay
 
 # 2. Compile via pdflatex
