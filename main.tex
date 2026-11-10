@@ -1,0 +1,148 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- Gói ngôn ngữ & font tiếng Việt ---
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+
+% --- Căn lề chuẩn văn bản học thuật Việt Nam ---
+\usepackage[top=2.0cm, bottom=2.0cm, left=3.0cm, right=2.0cm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% --- Gói đồ họa & bảng biểu ---
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+
+% --- Định dạng tiêu đề & mục lục ---
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% --- Tạo khung trang bìa ---
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+% ==================== TRANG BÌA ====================
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+  \draw[line width = 2pt] ($(current page.north west) + (2.0cm,-1.5cm)$)
+     rectangle ($(current page.south east) + (-1.5cm,1.5cm)$);
+  \draw[line width = 0.5pt] ($(current page.north west) + (2.1cm,-1.6cm)$)
+     rectangle ($(current page.south east) + (-1.6cm,1.6cm)$);
+\end{tikzpicture}
+
+\begin{center}
+    \vspace{0.5cm}
+    \textbf{\large BỘ GIÁO DỤC VÀ ĐÀO TẠO}\\[0.2cm]
+    \textbf{\large TRƯỜNG ĐẠI HỌC ...}\\[1.5cm]
+
+    \textbf{\Large TIỂU LUẬN MÔN HỌC}\\[0.3cm]
+    \textbf{\LARGE KHOA HỌC QUẢN LÝ VÀ QUẢN TRỊ}\\[1.5cm]
+
+    \rule{0.8\textwidth}{0.5pt}\\[0.4cm]
+    {\Large \bfseries ĐỀ TÀI:}\\[0.3cm]
+    {\LARGE \bfseries PHÂN TÍCH HOẠT ĐỘNG QUẢN LÝ, QUẢN TRỊ TẠI TẬP ĐOÀN FPT VÀ TÁC ĐỘNG CỦA TRÍ TUỆ NHÂN TẠO (AI)}\\[0.4cm]
+    \rule{0.8\textwidth}{0.5pt}\\[2.5cm]
+
+    \begin{table}[h]
+    \centering
+    \begin{tabular}{rll}
+        \textbf{Giảng viên hướng dẫn:} & TS./ThS. [Tên giảng viên] & \\
+        \textbf{Nhóm sinh viên thực hiện:} & [Họ và tên SV 1] & - MSSV: [MSSV 1] \\
+                                           & [Họ và tên SV 2] & - MSSV: [MSSV 2] \\
+        \textbf{Lớp học phần:}             & [Mã lớp] & \\
+        \textbf{Khóa:}                     & [202... - 202...] &
+    \end{tabular}
+    \end{table}
+
+    \vfill
+    \textbf{Hà Nội / TP.HCM, Tháng .../2026}
+\end{center}
+\end{titlepage}
+
+% ==================== MỤC LỤC ====================
+\newpage
+\tableofcontents
+\newpage
+
+% ==================== NỘI DUNG CHÍNH ====================
+
+\section*{LỜI MỞ ĐẦU}
+\addcontentsline{toc}{section}{LỜI MỞ ĐẦU}
+Lý do chọn đề tài, mục tiêu nghiên cứu, đối tượng và phạm vi nghiên cứu, phương pháp thực hiện.
+
+\newpage
+\section{TỔNG QUAN VỀ TẬP ĐOÀN FPT}
+\subsection{Lịch sử hình thành và phát triển}
+Khái quát quá trình từ 1988 đến nay.
+\subsection{Lĩnh vực hoạt động cốt lõi và vị thế thị trường}
+Khối Công nghệ (FPT Software, FPT IS), Khối Viễn thông (FPT Telecom), Khối Giáo dục (FPT Education).
+\subsection{Tầm nhìn, sứ mệnh và giá trị cốt lõi}
+Tầm nhìn DC5-135, sứ mệnh kiến tạo hạnh phúc, giá trị văn hóa FPT (Tôn - Đổi - Đồng - Chí - Gương - Sáng).
+
+\newpage
+\section{THỰC TRẠNG HOẠT ĐỘNG QUẢN LÝ TẠI FPT}
+\subsection{Sơ đồ cơ cấu tổ chức bộ máy quản lý}
+Mô hình tổ chức tập đoàn mẹ - con, mô hình quản trị ma trận.
+\subsection{Bộ máy điều hành: Vai trò Tổng Giám đốc và các Phó Tổng Giám đốc}
+Phân quyền chức năng: Tài chính, Công nghệ, Vận hành, Chuyển đổi số.
+\subsection{Cơ chế vận hành và phối hợp giữa Tập đoàn mẹ và các công ty thành viên}
+Cơ chế ủy quyền, KPI, OKR trong điều hành vận hành thường nhật.
+\subsection{Hạn chế trong công tác quản lý và điểm nghẽn cần cải thiện}
+\begin{itemize}
+    \item Quy mô nhân sự phình to (>70.000 người), bộ máy nhiều tầng nấc gây giảm tốc độ phản ứng.
+    \item Chồng chéo thẩm quyền giữa lãnh đạo sáng lập kỳ cựu và thế hệ lãnh đạo điều hành trẻ.
+    \item Độ trễ trao đổi thông tin và xung đột lợi ích cục bộ giữa các công ty con.
+\end{itemize}
+\subsection{Đề xuất giải pháp hoàn thiện cơ chế quản lý}
+Tinh gọn bộ máy, phân cấp triệt để, số hóa toàn diện quy trình tác nghiệp.
+
+\newpage
+\section{THỰC TRẠNG HOẠT ĐỘNG QUẢN TRỊ TẠI FPT}
+\subsection{Cơ cấu quản trị doanh nghiệp}
+Phân tích 3 trụ cột: Đại hội đồng Cổ đông (ĐHĐCĐ), Hội đồng Quản trị (HĐQT), Ban Kiểm soát / Ủy ban Kiểm toán.
+\subsection{Vai trò của Hội đồng Quản trị và tính độc lập trong giám sát}
+Vai trò Chủ tịch HĐQT, cơ cấu thành viên HĐQT độc lập, các tiểu ban trực thuộc HĐQT.
+\subsection{Phân định ranh giới giữa Quản trị (Governance) và Quản lý (Management)}
+So sánh thẩm quyền HĐQT (định hướng chiến lược, giám sát, bổ nhiệm) vs Ban Điều hành (thực thi kế hoạch kinh doanh).
+\subsection{Đánh giá việc tuân thủ các chuẩn mực quản trị tốt}
+Đối chiếu Bộ nguyên tắc Quản trị Công ty Việt Nam (CG Code) và chuẩn mực OECD.
+
+\newpage
+\section{TÁC ĐỘNG CỦA TRÍ TUỆ NHÂN TẠO (AI) ĐẾN QUẢN LÝ VÀ QUẢN TRỊ TẠI FPT}
+\subsection{Định hướng chiến lược AI của FPT}
+Hợp tác NVIDIA xây AI Factory, tích hợp AI vào giải pháp Made by FPT.
+\subsection{Tác động của AI đối với hoạt động Quản lý (Management)}
+Tự động hóa đánh giá năng suất lập trình, tối ưu quy trình nhân sự, trợ lý ảo điều hành tác nghiệp nội bộ.
+\subsection{Tác động của AI đối với hoạt động Quản trị (Corporate Governance)}
+Hỗ trợ HĐQT phân tích dữ liệu lớn phục vụ ra quyết định chiến lược, tự động hóa kiểm soát rủi ro và tuân thủ.
+\subsection{Thách thức và rủi ro đặt ra từ AI}
+Bảo mật dữ liệu, rủi ro thiên vị thuật toán, bài toán đạo đức AI và sự dịch chuyển lực lượng lao động.
+
+\newpage
+\section*{KẾT LUẬN VÀ KIẾN NGHỊ}
+\addcontentsline{toc}{section}{KẾT LUẬN VÀ KIẾN NGHỊ}
+Tóm tắt kết quả nghiên cứu và bài học kinh nghiệm về quản lý, quản trị cho doanh nghiệp Việt Nam.
+
+\newpage
+\section*{TÀI LIỆU THAM KHẢO}
+\addcontentsline{toc}{section}{TÀI LIỆU THAM KHẢO}
+\begin{enumerate}
+    \item Báo cáo thường niên Tập đoàn FPT (năm 2023, 2024).
+    \item Báo cáo tình hình quản trị công ty Tập đoàn FPT (2023, 2024).
+    \item Giáo trình Khoa học Quản lý / Quản trị học.
+    \item Bộ nguyên tắc Quản trị Công ty theo thông lệ tốt nhất tại Việt Nam (SSC \& IFC).
+\end{enumerate}
+
+\end{document}
