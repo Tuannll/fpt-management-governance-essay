@@ -64,8 +64,16 @@ pdflatex -synctex=1 -interaction=nonstopmode main.tex
 ## 📁 Project Structure
 
 ```text
-├── main.tex           # Master LaTeX source file with outline & cover page
+├── main.tex           # Master LaTeX source file with preamble & cover page
 ├── references.bib     # Bibliography file
+├── figures/           # Organization charts, diagrams, and figures
+├── chapters/          # Individual modular chapters
+│   ├── 00_loi_mo_dau.tex
+│   ├── 01_tong_quan_fpt.tex
+│   ├── 02_thuc_trang_quan_ly.tex
+│   ├── 03_thuc_trang_quan_tri.tex
+│   ├── 04_tac_dong_ai.tex
+│   └── 05_ket_luan.tex
 ├── .gitignore         # LaTeX build artifact exclusions
 ├── README.md          # Project documentation (English)
 └── README.vi.md       # Project documentation (Tiếng Việt)

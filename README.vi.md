@@ -64,8 +64,16 @@ pdflatex -synctex=1 -interaction=nonstopmode main.tex
 ## 📁 Cấu trúc thư mục
 
 ```text
-├── main.tex           # File mã nguồn LaTeX chính (khung bìa + mục lục + nội dung)
+├── main.tex           # File mã nguồn LaTeX chính (khung bìa + mục lục)
 ├── references.bib     # Danh mục tài liệu tham khảo BibTeX
+├── figures/           # Chứa sơ đồ tổ chức, hình ảnh minh họa
+├── chapters/          # Các chương nội dung dạng mô-đun
+│   ├── 00_loi_mo_dau.tex
+│   ├── 01_tong_quan_fpt.tex
+│   ├── 02_thuc_trang_quan_ly.tex
+│   ├── 03_thuc_trang_quan_tri.tex
+│   ├── 04_tac_dong_ai.tex
+│   └── 05_ket_luan.tex
 ├── .gitignore         # Bộ lọc bỏ qua file rác sinh ra khi biên dịch LaTeX
 ├── README.md          # Tài liệu dự án (Tiếng Anh)
 └── README.vi.md       # Tài liệu dự án (Tiếng Việt)
