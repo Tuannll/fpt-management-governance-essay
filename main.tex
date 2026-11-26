@@ -15,6 +15,8 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
 
 % --- Định dạng tiêu đề & mục lục ---
 \usepackage{titlesec}
@@ -27,7 +29,7 @@
     urlcolor=blue
 }
 
-% --- Tạo khung trang bìa ---
+% --- Tạo khung trang bìa đôi chuẩn Bộ GD&ĐT ---
 \usepackage{tikz}
 \usetikzlibrary{calc}
 
@@ -47,27 +49,28 @@
     \textbf{\large BỘ GIÁO DỤC VÀ ĐÀO TẠO}\\[0.2cm]
     \textbf{\large TRƯỜNG ĐẠI HỌC ...}\\[1.5cm]
 
-    \textbf{\Large TIỂU LUẬN MÔN HỌC}\\[0.3cm]
-    \textbf{\LARGE KHOA HỌC QUẢN LÝ VÀ QUẢN TRỊ}\\[1.5cm]
+    \textbf{\Large BÀI TIỂU LUẬN}\\[0.3cm]
+    \textbf{\LARGE MÔN HỌC: KHOA HỌC QUẢN LÝ VÀ QUẢN TRỊ}\\[1.2cm]
 
-    \rule{0.8\textwidth}{0.5pt}\\[0.4cm]
+    \rule{0.85\textwidth}{0.6pt}\\[0.4cm]
     {\Large \bfseries ĐỀ TÀI:}\\[0.3cm]
-    {\LARGE \bfseries PHÂN TÍCH HOẠT ĐỘNG QUẢN LÝ, QUẢN TRỊ TẠI TẬP ĐOÀN FPT VÀ TÁC ĐỘNG CỦA TRÍ TUỆ NHÂN TẠO (AI)}\\[0.4cm]
-    \rule{0.8\textwidth}{0.5pt}\\[2.5cm]
+    {\LARGE \bfseries TÌM HIỂU VỀ CÔNG TY CỔ PHẦN FPT}\\[0.2cm]
+    {\large \bfseries THỰC TRẠNG HOẠT ĐỘNG QUẢN TRỊ, QUẢN LÝ VÀ TÁC ĐỘNG CỦA TRÍ TUỆ NHÂN TẠO (AI)}\\[0.4cm]
+    \rule{0.85\textwidth}{0.6pt}\\[1.8cm]
 
     \begin{table}[h]
     \centering
     \begin{tabular}{rll}
-        \textbf{Giảng viên hướng dẫn:} & TS./ThS. [Tên giảng viên] & \\
-        \textbf{Nhóm sinh viên thực hiện:} & [Họ và tên SV 1] & - MSSV: [MSSV 1] \\
-                                           & [Họ và tên SV 2] & - MSSV: [MSSV 2] \\
-        \textbf{Lớp học phần:}             & [Mã lớp] & \\
-        \textbf{Khóa:}                     & [202... - 202...] &
+        \textbf{Giảng viên hướng dẫn:} & Cô [Họ và tên Giảng viên] & \\
+        \textbf{Nhóm sinh viên thực hiện:} & [Họ và tên SV 1] & - MSSV: [Mã SV 1] \\
+                                           & [Họ và tên SV 2] & - MSSV: [Mã SV 2] \\
+        \textbf{Lớp quản lý / Học phần:}   & [Tên Lớp Quản Lý] & \\
+        \textbf{Khóa học:}                 & 202... -- 202... &
     \end{tabular}
     \end{table}
 
     \vfill
-    \textbf{Hà Nội / TP.HCM, Tháng .../2026}
+    \textbf{Hà Nội, Năm 2026}
 \end{center}
 \end{titlepage}
 
@@ -81,22 +84,27 @@
 \newpage
 \input{chapters/01_tong_quan_fpt.tex}
 \newpage
-\input{chapters/02_thuc_trang_quan_ly.tex}
+\input{chapters/02_thuc_trang_quan_tri.tex}
 \newpage
-\input{chapters/03_thuc_trang_quan_tri.tex}
+\input{chapters/03_thuc_trang_quan_ly.tex}
 \newpage
 \input{chapters/04_tac_dong_ai.tex}
 \newpage
-\input{chapters/05_ket_luan.tex}
+\input{chapters/05_danh_gia_va_giai_phap.tex}
+\newpage
+\input{chapters/06_ket_luan.tex}
 
 \newpage
 \section*{TÀI LIỆU THAM KHẢO}
 \addcontentsline{toc}{section}{TÀI LIỆU THAM KHẢO}
 \begin{enumerate}
-    \item Báo cáo thường niên Tập đoàn FPT (năm 2023, 2024).
-    \item Báo cáo tình hình quản trị công ty Tập đoàn FPT (2023, 2024).
-    \item Giáo trình Khoa học Quản lý / Quản trị học.
-    \item Bộ nguyên tắc Quản trị Công ty theo thông lệ tốt nhất tại Việt Nam (SSC \& IFC).
+    \item Báo cáo thường niên Công ty Cổ phần FPT (các năm 2022, 2023, 2024, 2025).
+    \item Báo cáo tình hình quản trị công ty Công ty Cổ phần FPT (2024, 2025).
+    \item Giáo trình Khoa học Quản lý \& Quản trị học, Nhà xuất bản Đại học Quốc gia Hà Nội.
+    \item Luật Doanh nghiệp số 59/2020/QH14 và các nghị định hướng dẫn thi hành.
+    \item Bộ nguyên tắc Quản trị Công ty theo thông lệ tốt nhất tại Việt Nam (Ủy ban Chứng khoán Nhà nước và Tổ chức Tài chính Quốc tế IFC).
+    \item OECD Guidelines on Corporate Governance of State-Owned and Public Enterprises.
+    \item Website chính thức Công ty Cổ phần FPT: \url{https://fpt.com}.
 \end{enumerate}
 
 \end{document}
